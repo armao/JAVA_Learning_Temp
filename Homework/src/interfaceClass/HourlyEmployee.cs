@@ -2,10 +2,10 @@ package interfaceClass;
 
 public class HourlyEmployee extends Employee {
 	
-	private float m_hours;
-	private int m_wage;
+	private double hours;
+	private double wage;
 
-	public HourlyEmployee(String fName, String lName, String id, float hours, int wage) {
+	public HourlyEmployee(String fName, String lName, String id, double hours, double wage) {
 		super(fName, lName, id);
 		// TODO 自動產生的建構子 Stub
 	
@@ -16,28 +16,28 @@ public class HourlyEmployee extends Employee {
 			throw new IllegalArgumentException("");
 		}
 		
-		this.m_hours = hours;
-		this.m_wage = wage;
+		this.hours = hours;
+		this.wage = wage;
 	}
 	
 	
-	public float getHours() {return m_hours;}
+	public double getHours() {return hours;}
 	
-	public void setHours(float hours) {
-		this.m_hours = hours;
+	public void setHours(double hours) {
+		this.hours = hours;
 	}
 
 	
-	public int getWage() {return m_wage;}
+	public double getWage() {return wage;}
 	
-	public void setWage(int wage) {
-		this.m_wage = wage;
+	public void setWage(double wage) {
+		this.wage = wage;
 	}
 
 
 
 	public double getPaymentAmount() {
-		if(m_hours>40) {
+		if(hours>40) {
 			return (  ( (getHours()-40)*getWage() ) + (40*getWage())   );
 		}
 		else {

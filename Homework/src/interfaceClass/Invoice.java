@@ -73,5 +73,14 @@ public class Invoice implements Payable {
 		// TODO 自動產生的方法 Stub
 		return quantity*pricePerItem;
 	}
-
+	@Override
+	public String toString() {
+		return String.format
+				("%s %s %s %n",
+				"供應商應付款-貨品: ",this.getPartNumber(),this.getPartDescription()
+				);
+	}
+	
+	
+	
 }

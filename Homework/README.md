@@ -9,7 +9,8 @@
 
 	需要實作「HourlyEmployee」方法，代表類別建構式。
 
-	請覆寫「toString」方法，提供顯示時薪的功能。```
+	請覆寫「toString」方法，提供顯示時薪的功能。
+`
 
 
 2.	設計一個類別階層「Commission Employee」、「BasePlusCommissionEmployee」，繼承Employee，實作Payable界面，用以表示佣金員工及底薪加佣金員工，並具備基礎錯誤參數檢查的建構式與服務方法功能。
@@ -22,6 +23,7 @@
 	需要分別實作「CommissionEmployee」、「BasePlusCommissionEmployee」方法，代表類別建構式。
 
 	請分別覆寫「toString」方法，提供顯示薪水的功能。```
+
 
 
 3.	設計一個類別「InterfacePayableTest」，具備程式進入點Main()功能，利用Payable界面、多型的處理各種「Employee」、「Invoice」子類別。
